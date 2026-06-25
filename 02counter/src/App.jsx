@@ -13,14 +13,18 @@ function App() {
   const addValue = () => {
 
     // counter = counter + 1
-    setCounter(counter + 1)
+    if (counter < 20) {
+      setCounter(counter + 1)
+    }
     console.log('Add + 1 = ', counter);
   }
 
 
   const removeValue = () => {
     // counter = counter - 1
-    setCounter(counter - 1)
+    if (counter > 0) {
+      setCounter(counter - 1)
+    }
     console.log('Remove - 1 = ', counter);
   }
 
