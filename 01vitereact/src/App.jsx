@@ -1,9 +1,16 @@
+import Chai from './Chai.jsx'
+
 
 function App() {
- 
+  const username = 'Vite + React' //variable to store the username
+
 
   return (
-   <h1>hello vite</h1>
+    <>
+    <Chai />
+    <p>Hello, {username}!</p> 
+    {/* <h1>React</h1> */}
+  </>
   )
 }
 
